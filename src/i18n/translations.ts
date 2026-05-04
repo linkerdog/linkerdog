@@ -63,7 +63,7 @@ export const translations: Record<Language, AppCopy> = {
     meta: {
       title: "Linkerdog - AgentHub and RARA",
       description:
-        "Linkerdog introduces AgentHub and RARA: an Agent Team platform and a local/cloud-first, movable general agent.",
+        "Linkerdog uses AgentHub and RARA agent to turn general agents into a team that can deliver, move, and collaborate.",
     },
     header: {
       nav: {
@@ -75,72 +75,72 @@ export const translations: Record<Language, AppCopy> = {
       languageLabel: "Choose language",
     },
     hero: {
-      eyebrow: "General agent infrastructure",
-      title: "An Agent Team platform, and the agent that moves with the work.",
+      eyebrow: "Agent Teams for real work",
+      title: "Turn general agents into a team that delivers.",
       lead:
-        "AgentHub is the platform layer for coordinating Agent Teams. RARA agent is local/cloud first: dynamic, portable, and able to move across environments as the task changes.",
+        "AgentHub makes goals, tasks, progress, and outcomes manageable. RARA agent executes the work, keeps context, and continues complex tasks locally or in the cloud.",
       agenthubCta: "View AgentHub",
       raraCta: "View RARA",
       consoleLabel: "Runtime relationship preview",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
-        { prompt: ">", text: "Agent Team platform, ACP timelines, shared coordination", tone: "muted" },
+        { prompt: ">", text: "create the team, assign work, sync progress", tone: "muted" },
         { prompt: "$", text: "rara migrate --target cloud-node-a" },
-        { prompt: "ok", text: "local/cloud first agent, dynamic context, movable runtime", tone: "success" },
+        { prompt: "ok", text: "keep context and continue in the better place", tone: "success" },
       ],
     },
     signals: [
-      { title: "Platform", body: "AgentHub coordinates Agent Teams" },
-      { title: "Runtime", body: "RARA moves with the task" },
-      { title: "Local/cloud first", body: "choose the right execution place" },
-      { title: "General agents", body: "not limited to software work" },
+      { title: "One workspace", body: "manage the Agent Team from one place" },
+      { title: "Continuous delivery", body: "track tasks, progress, and outcomes" },
+      { title: "Movable agent", body: "RARA agent shifts between local and cloud" },
+      { title: "General work", body: "research, operations, automation, and review" },
     ],
     projectsLabel: "Project overview",
     modelSupport: {
       eyebrow: "Model support",
-      title: "One agent, many model backends.",
+      title: "Choose the model for the task, not the other way around.",
       body:
-        "RARA agent can work with different model providers and deployment shapes, so the same task can move between local, hosted, and cloud model environments.",
+        "RARA agent connects to multiple providers and deployment shapes. Keep lightweight work local, move harder tasks to the cloud, and preserve the same agent context throughout.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
     projects: {
       agenthub: {
-        eyebrow: "AgentHub platform",
+        eyebrow: "Agent Team workspace",
         summary:
-          "An Agent Team platform for coordinating long-running general agents, shared workspaces, structured ACP timelines, task ownership, and optional remote execution nodes.",
+          "AgentHub turns multiple general agents into a manageable digital team: who owns the work, where it stands, and what it produced are visible in one workspace.",
         features: [
-          "Run Agent Teams from one platform surface instead of scattered runtime sessions.",
-          "Inspect plans, tool calls, command output, research notes, decisions, and replayable history.",
-          "Coordinate people and agents through channels, tasks, ownership, and per-agent inspection.",
+          "Bring scattered agent sessions into a shared team view that is easier to coordinate and hand off.",
+          "Capture plans, execution records, research material, decisions, and final outcomes.",
+          "Use tasks, channels, and clear responsibility to keep people and agents moving toward the same goal.",
         ],
       },
       rara: {
         eyebrow: "RARA agent",
         summary:
-          "A local/cloud-first general agent written in Rust, designed for dynamic context, tool execution, workspace memory, sandboxing, and migration across changing environments.",
+          "RARA agent is a movable general-purpose executor. It can start locally, continue in the cloud, and carry context forward when the environment changes.",
         features: [
-          "Adapt to hosted, OpenAI-compatible, Ollama, Gemini, and local model backends.",
-          "Carry shell, PTY, files, search, web, planning, memory, skills, and sub-agent tools.",
-          "Restore, fork, and migrate work while preserving the agent's operational context.",
+          "Pick local, hosted, or cloud models for each task without locking the workflow to one provider.",
+          "Bring tools, files, search, web, planning, memory, and skills to work beyond coding tasks.",
+          "Restore, fork, or migrate while preserving context so long-running work does not restart.",
         ],
       },
     },
     workflow: {
       eyebrow: "How they fit together",
-      title: "AgentHub is the platform. RARA agent moves with the task.",
+      title: "The platform organizes the team. The agent gets the work done.",
       items: [
         {
-          title: "Coordinate the team",
-          body: "Use AgentHub when multiple agents need shared channels, visible ownership, and reviewable timelines.",
+          title: "Organize the work",
+          body: "AgentHub keeps goals, tasks, responsibility, and outcomes in one collaboration space for people to manage and review.",
         },
         {
-          title: "Move the worker",
-          body: "Use RARA as the adaptable runtime that follows tools, context, providers, and environment changes.",
+          title: "Move execution",
+          body: "RARA agent chooses local or cloud execution for the task and keeps context when it moves.",
         },
         {
-          title: "Generalize the task",
-          body: "Use the same platform/runtime split for research, operations, automation, review, and other agent work.",
+          title: "Expand the use cases",
+          body: "Use the same team-and-agent model for research, operations, automation, review, and broader business work.",
         },
       ],
     },
@@ -234,7 +234,7 @@ export const translations: Record<Language, AppCopy> = {
     meta: {
       title: "Linkerdog - AgentHub y RARA",
       description:
-        "Linkerdog presenta AgentHub y RARA: una plataforma Agent Team y un agente general local/cloud first y portable.",
+        "Linkerdog usa AgentHub y RARA agent para convertir agentes generales en un equipo que entrega, se mueve y colabora.",
     },
     header: {
       nav: {
@@ -246,72 +246,72 @@ export const translations: Record<Language, AppCopy> = {
       languageLabel: "Elegir idioma",
     },
     hero: {
-      eyebrow: "Infraestructura de agentes generales",
-      title: "Una plataforma Agent Team, y el agente que se mueve con el trabajo.",
+      eyebrow: "Agent Teams para trabajo real",
+      title: "Convierte agentes generales en un equipo que entrega.",
       lead:
-        "AgentHub es la capa de plataforma para coordinar Agent Teams. RARA agent es local/cloud first: dinámico, portable y capaz de moverse entre entornos cuando cambia la tarea.",
+        "AgentHub hace gestionables los objetivos, tareas, avances y resultados. RARA agent ejecuta el trabajo, conserva el contexto y continúa tareas complejas en local o en cloud.",
       agenthubCta: "Ver AgentHub",
       raraCta: "Ver RARA",
-      consoleLabel: "Vista previa de la relación runtime",
+      consoleLabel: "Vista previa de la colaboración",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
-        { prompt: ">", text: "plataforma Agent Team, líneas ACP, coordinación", tone: "muted" },
+        { prompt: ">", text: "crear equipo, asignar trabajo, sincronizar avances", tone: "muted" },
         { prompt: "$", text: "rara migrate --target cloud-node-a" },
-        { prompt: "ok", text: "agente local/cloud first, contexto dinámico, portable", tone: "success" },
+        { prompt: "ok", text: "conservar contexto y continuar en el mejor lugar", tone: "success" },
       ],
     },
     signals: [
-      { title: "Plataforma", body: "AgentHub coordina Agent Teams" },
-      { title: "Runtime", body: "RARA se mueve con la tarea" },
-      { title: "Local/cloud first", body: "elige el lugar de ejecución adecuado" },
-      { title: "Agentes generales", body: "no limitado al trabajo de software" },
+      { title: "Un workspace", body: "gestiona el Agent Team desde un lugar" },
+      { title: "Entrega continua", body: "sigue tareas, avances y resultados" },
+      { title: "Agente móvil", body: "RARA agent se mueve entre local y cloud" },
+      { title: "Trabajo general", body: "investigación, operaciones, automatización y revisión" },
     ],
     projectsLabel: "Resumen de proyectos",
     modelSupport: {
       eyebrow: "Soporte de modelos",
-      title: "Un agente, muchos backends de modelo.",
+      title: "Elige el modelo para la tarea, no al revés.",
       body:
-        "RARA agent puede trabajar con distintos proveedores y formas de despliegue, para mover la misma tarea entre entornos locales, hosted y cloud.",
+        "RARA agent conecta con varios proveedores y formas de despliegue. Mantén el trabajo ligero en local, mueve tareas complejas a cloud y conserva el mismo contexto del agente.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
     projects: {
       agenthub: {
-        eyebrow: "Plataforma AgentHub",
+        eyebrow: "Workspace de Agent Team",
         summary:
-          "Una plataforma Agent Team para coordinar agentes generales de larga duración, workspaces compartidos, líneas ACP estructuradas, ownership de tareas y nodos remotos opcionales.",
+          "AgentHub convierte varios agentes generales en un equipo digital gestionable: quién tiene cada tarea, en qué punto está y qué produjo queda visible en un solo workspace.",
         features: [
-          "Ejecuta Agent Teams desde una plataforma en lugar de sesiones de runtime dispersas.",
-          "Inspecciona planes, herramientas, salida de comandos, notas de investigación, decisiones e historial reproducible.",
-          "Coordina personas y agentes con canales, tareas, ownership e inspección por agente.",
+          "Reúne sesiones de agentes dispersas en una vista de equipo más fácil de coordinar y transferir.",
+          "Guarda planes, registros de ejecución, material de investigación, decisiones y resultados finales.",
+          "Usa tareas, canales y responsabilidades claras para mantener a personas y agentes orientados al mismo objetivo.",
         ],
       },
       rara: {
         eyebrow: "RARA agent",
         summary:
-          "Un agente general local/cloud first escrito en Rust, diseñado para contexto dinámico, herramientas, memoria de workspace, sandbox y migración entre entornos cambiantes.",
+          "RARA agent es un ejecutor general que se puede mover. Puede empezar en local, continuar en cloud y llevar el contexto cuando cambia el entorno.",
         features: [
-          "Se adapta a backends hosted, compatibles con OpenAI, Ollama, Gemini y modelos locales.",
-          "Lleva shell, PTY, archivos, búsqueda, web, planificación, memoria, skills y subagentes.",
-          "Restaura, bifurca y migra trabajo preservando el contexto operativo del agente.",
+          "Elige modelos locales, hosted o cloud por tarea sin encerrar el flujo en un solo proveedor.",
+          "Lleva herramientas, archivos, búsqueda, web, planificación, memoria y skills para trabajos más allá del código.",
+          "Restaura, bifurca o migra conservando contexto para que las tareas largas no vuelvan a empezar.",
         ],
       },
     },
     workflow: {
       eyebrow: "Cómo encajan",
-      title: "AgentHub es la plataforma. RARA agent se mueve con la tarea.",
+      title: "La plataforma organiza el equipo. El agente termina el trabajo.",
       items: [
         {
-          title: "Coordina el equipo",
-          body: "Usa AgentHub cuando varios agentes necesitan canales compartidos, ownership visible y timelines revisables.",
+          title: "Organiza el trabajo",
+          body: "AgentHub mantiene objetivos, tareas, responsabilidades y resultados en un espacio de colaboración que las personas pueden gestionar y revisar.",
         },
         {
-          title: "Mueve el worker",
-          body: "Usa RARA como runtime adaptable que sigue herramientas, contexto, proveedores y cambios de entorno.",
+          title: "Mueve la ejecución",
+          body: "RARA agent elige ejecución local o cloud según la tarea y conserva el contexto cuando se mueve.",
         },
         {
-          title: "Generaliza la tarea",
-          body: "Usa la misma separación plataforma/runtime para investigación, operaciones, automatización, revisión y otros trabajos de agente.",
+          title: "Amplía los casos",
+          body: "Usa el mismo modelo de equipo y agente para investigación, operaciones, automatización, revisión y más trabajo de negocio.",
         },
       ],
     },
@@ -320,7 +320,7 @@ export const translations: Record<Language, AppCopy> = {
     meta: {
       title: "Linkerdog - AgentHub et RARA",
       description:
-        "Linkerdog présente AgentHub et RARA : une plateforme Agent Team et un agent général local/cloud first et portable.",
+        "Linkerdog utilise AgentHub et RARA agent pour transformer des agents généraux en une équipe capable de livrer, de se déplacer et de collaborer.",
     },
     header: {
       nav: {
@@ -332,72 +332,72 @@ export const translations: Record<Language, AppCopy> = {
       languageLabel: "Choisir la langue",
     },
     hero: {
-      eyebrow: "Infrastructure pour agents généraux",
-      title: "Une plateforme Agent Team, et l'agent qui suit le travail.",
+      eyebrow: "Agent Teams pour le travail réel",
+      title: "Transformer des agents généraux en une équipe qui livre.",
       lead:
-        "AgentHub est la couche plateforme pour coordonner les Agent Teams. RARA agent est local/cloud first : dynamique, portable et capable de migrer entre environnements lorsque la tâche change.",
+        "AgentHub rend les objectifs, tâches, progrès et résultats pilotables. RARA agent exécute le travail, garde le contexte et poursuit les tâches complexes en local ou dans le cloud.",
       agenthubCta: "Voir AgentHub",
       raraCta: "Voir RARA",
-      consoleLabel: "Aperçu de la relation runtime",
+      consoleLabel: "Aperçu de la collaboration",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
-        { prompt: ">", text: "plateforme Agent Team, timelines ACP, coordination", tone: "muted" },
+        { prompt: ">", text: "créer l'équipe, assigner le travail, synchroniser les progrès", tone: "muted" },
         { prompt: "$", text: "rara migrate --target cloud-node-a" },
-        { prompt: "ok", text: "agent local/cloud first, contexte dynamique, portable", tone: "success" },
+        { prompt: "ok", text: "garder le contexte et continuer au meilleur endroit", tone: "success" },
       ],
     },
     signals: [
-      { title: "Plateforme", body: "AgentHub coordonne les Agent Teams" },
-      { title: "Runtime", body: "RARA suit la tâche" },
-      { title: "Local/cloud first", body: "choisir le bon lieu d'exécution" },
-      { title: "Agents généraux", body: "pas limité au travail logiciel" },
+      { title: "Un workspace", body: "gérer l'Agent Team depuis un seul endroit" },
+      { title: "Livraison continue", body: "suivre tâches, progrès et résultats" },
+      { title: "Agent mobile", body: "RARA agent passe du local au cloud" },
+      { title: "Travail général", body: "recherche, opérations, automatisation et revue" },
     ],
     projectsLabel: "Aperçu des projets",
     modelSupport: {
       eyebrow: "Support des modèles",
-      title: "Un agent, plusieurs backends de modèles.",
+      title: "Choisir le modèle pour la tâche, pas l'inverse.",
       body:
-        "RARA agent peut travailler avec différents fournisseurs et formes de déploiement, afin de déplacer une même tâche entre environnements locaux, hosted et cloud.",
+        "RARA agent se connecte à plusieurs fournisseurs et modes de déploiement. Gardez les tâches légères en local, déplacez les tâches complexes vers le cloud et conservez le même contexte d'agent.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
     projects: {
       agenthub: {
-        eyebrow: "Plateforme AgentHub",
+        eyebrow: "Workspace Agent Team",
         summary:
-          "Une plateforme Agent Team pour coordonner des agents généraux longue durée, des workspaces partagés, des timelines ACP structurées, l'ownership des tâches et des noeuds distants optionnels.",
+          "AgentHub transforme plusieurs agents généraux en une équipe numérique pilotable : qui possède le travail, où il en est et ce qu'il produit restent visibles dans un seul workspace.",
         features: [
-          "Exécuter des Agent Teams depuis une plateforme plutôt que des sessions runtime dispersées.",
-          "Inspecter plans, outils, sorties de commandes, notes de recherche, décisions et historique rejouable.",
-          "Coordonner humains et agents avec canaux, tâches, ownership et inspection par agent.",
+          "Rassembler des sessions d'agents dispersées dans une vue d'équipe plus simple à coordonner et transmettre.",
+          "Conserver plans, traces d'exécution, matériaux de recherche, décisions et résultats finaux.",
+          "Utiliser tâches, canaux et responsabilités claires pour garder humains et agents alignés sur le même objectif.",
         ],
       },
       rara: {
         eyebrow: "RARA agent",
         summary:
-          "Un agent général local/cloud first écrit en Rust, conçu pour le contexte dynamique, les outils, la mémoire de workspace, le sandbox et la migration entre environnements changeants.",
+          "RARA agent est un exécuteur général mobile. Il peut démarrer en local, continuer dans le cloud et garder le contexte lorsque l'environnement change.",
         features: [
-          "S'adapter aux backends hosted, compatibles OpenAI, Ollama, Gemini et modèles locaux.",
-          "Emporter shell, PTY, fichiers, recherche, web, planification, mémoire, skills et sous-agents.",
-          "Restaurer, forker et migrer le travail en préservant le contexte opérationnel de l'agent.",
+          "Choisir des modèles locaux, hosted ou cloud pour chaque tâche sans enfermer le workflow chez un seul fournisseur.",
+          "Emporter outils, fichiers, recherche, web, planification, mémoire et skills pour travailler au-delà du code.",
+          "Restaurer, forker ou migrer en conservant le contexte afin que les tâches longues ne redémarrent pas.",
         ],
       },
     },
     workflow: {
       eyebrow: "Comment ils s'articulent",
-      title: "AgentHub est la plateforme. RARA agent suit la tâche.",
+      title: "La plateforme organise l'équipe. L'agent termine le travail.",
       items: [
         {
-          title: "Coordonner l'équipe",
-          body: "Utilisez AgentHub quand plusieurs agents ont besoin de canaux partagés, d'ownership visible et de timelines révisables.",
+          title: "Organiser le travail",
+          body: "AgentHub garde objectifs, tâches, responsabilités et résultats dans un espace de collaboration que les humains peuvent piloter et relire.",
         },
         {
-          title: "Déplacer le worker",
-          body: "Utilisez RARA comme runtime adaptable qui suit outils, contexte, fournisseurs et changements d'environnement.",
+          title: "Déplacer l'exécution",
+          body: "RARA agent choisit l'exécution locale ou cloud selon la tâche et garde le contexte lorsqu'il se déplace.",
         },
         {
-          title: "Généraliser la tâche",
-          body: "Utilisez la même séparation plateforme/runtime pour recherche, opérations, automatisation, revue et autres travaux d'agent.",
+          title: "Élargir les usages",
+          body: "Utilisez le même modèle équipe-agent pour la recherche, les opérations, l'automatisation, la revue et d'autres travaux métier.",
         },
       ],
     },
