@@ -40,6 +40,16 @@ export interface AppCopy {
     centerLabel: string;
     note: string;
   };
+  useCases: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    items: Array<{
+      title: string;
+      body: string;
+      accent: string;
+    }>;
+  };
   projects: Record<
     ProjectId,
     {
@@ -103,6 +113,29 @@ export const translations: Record<Language, AppCopy> = {
         "RARA agent connects to multiple providers and deployment shapes. Keep lightweight work local, move harder tasks to the cloud, and preserve the same agent context throughout.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
+    },
+    useCases: {
+      eyebrow: "Where it helps",
+      title: "Built for work that does not fit in a single chat.",
+      body:
+        "AgentHub and RARA agent are useful when the work needs continuity, shared ownership, and the freedom to move execution as conditions change.",
+      items: [
+        {
+          title: "Research operations",
+          body: "Run multiple agents through source gathering, comparison, synthesis, and review while keeping decisions visible.",
+          accent: "Research",
+        },
+        {
+          title: "Business automation",
+          body: "Coordinate recurring work across tools, files, web tasks, and human checkpoints without restarting context.",
+          accent: "Ops",
+        },
+        {
+          title: "Review workflows",
+          body: "Let agents inspect plans, artifacts, and results over time, then hand off work with a traceable record.",
+          accent: "Review",
+        },
+      ],
     },
     projects: {
       agenthub: {
@@ -188,6 +221,29 @@ export const translations: Record<Language, AppCopy> = {
         "RARA agent 可以连接多种模型 Provider 和部署形态。轻量任务留在本地，复杂任务切到云端，同一个 Agent 继续保留上下文和工作状态。",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
+    },
+    useCases: {
+      eyebrow: "适用场景",
+      title: "为单次聊天装不下的工作而设计。",
+      body:
+        "当任务需要连续上下文、清晰责任和可迁移执行时，AgentHub 与 RARA agent 可以把通用 Agent 变成真正可交付的工作系统。",
+      items: [
+        {
+          title: "研究型工作",
+          body: "让多个 Agent 参与资料收集、对比、归纳和复核，决策过程和结果都保留在同一个工作空间里。",
+          accent: "Research",
+        },
+        {
+          title: "业务自动化",
+          body: "协调工具、文件、网页任务和人工检查点，让周期性工作不因为环境切换而丢失上下文。",
+          accent: "Ops",
+        },
+        {
+          title: "审查与交接",
+          body: "让 Agent 持续检查计划、产物和结果，并把可追踪记录交给团队继续推进。",
+          accent: "Review",
+        },
+      ],
     },
     projects: {
       agenthub: {
@@ -275,6 +331,29 @@ export const translations: Record<Language, AppCopy> = {
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
+    useCases: {
+      eyebrow: "Dónde ayuda",
+      title: "Diseñado para trabajo que no cabe en un solo chat.",
+      body:
+        "AgentHub y RARA agent ayudan cuando el trabajo necesita continuidad, responsabilidad compartida y libertad para mover la ejecución cuando cambian las condiciones.",
+      items: [
+        {
+          title: "Operaciones de investigación",
+          body: "Coordina agentes para recopilar fuentes, comparar, sintetizar y revisar manteniendo visibles las decisiones.",
+          accent: "Research",
+        },
+        {
+          title: "Automatización de negocio",
+          body: "Organiza trabajo recurrente entre herramientas, archivos, tareas web y checkpoints humanos sin reiniciar contexto.",
+          accent: "Ops",
+        },
+        {
+          title: "Flujos de revisión",
+          body: "Permite que los agentes inspeccionen planes, artefactos y resultados a lo largo del tiempo y entreguen un registro trazable.",
+          accent: "Review",
+        },
+      ],
+    },
     projects: {
       agenthub: {
         eyebrow: "Workspace de Agent Team",
@@ -360,6 +439,29 @@ export const translations: Record<Language, AppCopy> = {
         "RARA agent se connecte à plusieurs fournisseurs et modes de déploiement. Gardez les tâches légères en local, déplacez les tâches complexes vers le cloud et conservez le même contexte d'agent.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
+    },
+    useCases: {
+      eyebrow: "Où cela aide",
+      title: "Conçu pour le travail qui ne tient pas dans un seul chat.",
+      body:
+        "AgentHub et RARA agent sont utiles lorsque le travail demande continuité, responsabilité partagée et liberté de déplacer l'exécution selon le contexte.",
+      items: [
+        {
+          title: "Opérations de recherche",
+          body: "Coordonner plusieurs agents pour collecter, comparer, synthétiser et relire tout en gardant les décisions visibles.",
+          accent: "Research",
+        },
+        {
+          title: "Automatisation métier",
+          body: "Organiser le travail récurrent entre outils, fichiers, tâches web et validations humaines sans perdre le contexte.",
+          accent: "Ops",
+        },
+        {
+          title: "Flux de revue",
+          body: "Laisser les agents inspecter plans, artefacts et résultats dans la durée, puis transmettre un historique traçable.",
+          accent: "Review",
+        },
+      ],
     },
     projects: {
       agenthub: {

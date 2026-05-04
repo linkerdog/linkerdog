@@ -5,6 +5,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import { SignalStrip } from "./components/SignalStrip";
 import { Workflow } from "./components/Workflow";
 import { ModelSupport } from "./components/ModelSupport";
+import { UseCases } from "./components/UseCases";
 import { detectLanguage, languageOptions } from "./i18n/languages";
 import { translations } from "./i18n/translations";
 import { projects } from "./content/projects";
@@ -26,6 +27,7 @@ export function App() {
         <Hero copy={copy.hero} />
         <SignalStrip items={copy.signals} />
         <ModelSupport copy={copy.modelSupport} />
+        <UseCases copy={copy.useCases} />
         <section className="project-grid" aria-label={copy.projectsLabel}>
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} copy={copy.projects[project.id]} />
