@@ -34,6 +34,15 @@ Cloudflare Pages settings:
 - Build output directory: `dist`
 - Root directory: repository root
 
+If using a custom deploy command, use:
+
+```bash
+npm run deploy
+```
+
+Do not use `npx wrangler deploy` for this project; it is a Cloudflare Pages
+site and should be deployed with `wrangler pages deploy`.
+
 ## Internationalization
 
 Supported language routes:
