@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
   workflow_dispatch:
 
 permissions:
@@ -11,8 +16,9 @@ permissions:
   deployments: write
 
 jobs:
-  deploy:
-    name: Deploy Cloudflare Worker
+  deploy-production:
+    name: Deploy production Worker
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,9 +37,47 @@ jobs:
         run: npm run build
 
       - name: Deploy Worker
+        id: deploy-production
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy-preview:
+    name: Deploy preview Worker
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy preview Worker
+        id: deploy-preview
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --env preview
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish preview URL
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy-preview.outputs.deployment-url }}
+        run: |
+          echo "## Preview deployment" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "$DEPLOYMENT_URL" >> "$GITHUB_STEP_SUMMARY"
