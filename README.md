@@ -28,20 +28,17 @@ npm run dev
 npm run build
 ```
 
-Cloudflare Pages settings:
+Cloudflare Workers settings:
 
-- Build command: `npm run build`
-- Build output directory: `dist`
+- Deploy command: `npm run deploy`
 - Root directory: repository root
 
-If using a custom deploy command, use:
+The deploy script builds the Vite app first, then uploads `dist` as Worker
+static assets through Wrangler:
 
 ```bash
 npm run deploy
 ```
-
-Do not use `npx wrangler deploy` for this project; it is a Cloudflare Pages
-site and should be deployed with `wrangler pages deploy`.
 
 ## Internationalization
 
