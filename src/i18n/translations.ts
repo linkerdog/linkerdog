@@ -148,7 +148,7 @@ export const translations: Record<Language, AppCopy> = {
   zh: {
     meta: {
       title: "Linkerdog - AgentHub 与 RARA",
-      description: "Linkerdog 介绍 AgentHub 与 RARA：一个 Agent Team 平台，以及一个 local/cloud first、可迁移的通用 Agent。",
+      description: "Linkerdog 用 AgentHub 与 RARA agent，把通用 Agent 组织成可交付、可迁移、可协作的数字团队。",
     },
     header: {
       nav: {
@@ -160,72 +160,72 @@ export const translations: Record<Language, AppCopy> = {
       languageLabel: "选择语言",
     },
     hero: {
-      eyebrow: "通用 Agent 基础设施",
-      title: "一个 Agent Team 平台，一个跟着任务迁移的 Agent。",
+      eyebrow: "面向真实工作的 Agent Team",
+      title: "把通用 Agent 组织成一支会交付的团队。",
       lead:
-        "AgentHub 是协调 Agent Team 的平台层。RARA agent 是 local/cloud first 的通用 Agent，可以按任务选择本地或云端，并在环境变化时迁移。",
+        "AgentHub 让目标、任务、进展和结果可管理；RARA agent 负责执行、记住上下文，并在本地或云端接力复杂任务。",
       agenthubCta: "查看 AgentHub",
       raraCta: "查看 RARA",
       consoleLabel: "运行关系预览",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
-        { prompt: ">", text: "Agent Team 平台、ACP 时间线、共享协作", tone: "muted" },
+        { prompt: ">", text: "创建团队、分配任务、同步进展", tone: "muted" },
         { prompt: "$", text: "rara migrate --target cloud-node-a" },
-        { prompt: "ok", text: "local/cloud first Agent、动态上下文、可迁移", tone: "success" },
+        { prompt: "ok", text: "保留上下文，在更合适的位置继续工作", tone: "success" },
       ],
     },
     signals: [
-      { title: "平台", body: "AgentHub 协调 Agent Team" },
-      { title: "RARA agent", body: "跟随任务迁移" },
-      { title: "Local/cloud first", body: "本地或云端都能成为执行位置" },
-      { title: "通用 Agent", body: "不只服务于软件开发任务" },
+      { title: "统一入口", body: "从一个工作台管理 Agent Team" },
+      { title: "持续交付", body: "任务、进展和结果可追踪" },
+      { title: "自由迁移", body: "RARA agent 在本地与云端之间移动" },
+      { title: "通用任务", body: "覆盖研究、运营、自动化与审查" },
     ],
     projectsLabel: "项目概览",
     modelSupport: {
       eyebrow: "模型支持",
-      title: "一个 Agent，连接多种模型后端。",
+      title: "按任务选择模型，而不是被模型绑定。",
       body:
-        "RARA agent 可以适配不同模型 Provider 和部署形态，让同一个任务在本地、托管服务和云端模型环境之间迁移。",
+        "RARA agent 可以连接多种模型 Provider 和部署形态。轻量任务留在本地，复杂任务切到云端，同一个 Agent 继续保留上下文和工作状态。",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
     projects: {
       agenthub: {
-        eyebrow: "AgentHub 平台",
+        eyebrow: "Agent Team 工作台",
         summary:
-          "一个 Agent Team 平台，用于协调长时间运行的通用 Agent、共享工作区、结构化 ACP 时间线、任务归属，以及可选的远程执行节点。",
+          "AgentHub 把多个通用 Agent 组织成一支可管理的数字团队：谁负责什么、进展到哪里、产出了什么，都在同一个工作台里可见。",
         features: [
-          "用一个平台界面承载 Agent Team，而不是分散在多个运行会话里。",
-          "检查计划、工具调用、命令输出、研究记录、决策和可回放历史。",
-          "通过频道、任务、责任归属和单 Agent 检查来协调人和 Agent。",
+          "把分散的 Agent 会话收拢成团队视图，降低协作和交接成本。",
+          "沉淀计划、执行记录、研究材料、决策过程和最终结果。",
+          "通过任务、频道和责任归属，让人和 Agent 围绕同一个目标推进。",
         ],
       },
       rara: {
         eyebrow: "RARA agent",
         summary:
-          "一个 Rust 编写的 local/cloud first 通用 Agent，面向动态上下文、工具执行、工作区记忆、命令沙箱，以及跨动态环境迁移。",
+          "RARA agent 是可迁移的通用执行成员。它可以在本地开始，在云端接力，也可以在环境变化时带着上下文继续工作。",
         features: [
-          "适配托管、OpenAI 兼容、Ollama、Gemini 和本地模型后端。",
-          "携带 shell、PTY、文件、搜索、Web、计划、记忆、Skill 和子 Agent 工具。",
-          "在保留运行上下文的前提下恢复、fork，并把工作迁移到需要的位置。",
+          "根据任务选择本地模型、托管模型或云端模型，不被单一 Provider 锁定。",
+          "携带工具、文件、搜索、Web、计划、记忆和 Skill，处理不止代码的通用工作。",
+          "在保留上下文的前提下恢复、分叉或迁移，让长任务不中断。",
         ],
       },
     },
     workflow: {
       eyebrow: "它们如何配合",
-      title: "AgentHub 是平台，RARA agent 跟随任务迁移。",
+      title: "平台负责组织团队，Agent 负责把事情做完。",
       items: [
         {
-          title: "协调团队",
-          body: "当多个 Agent 需要共享频道、可见责任归属和可审查时间线时，使用 AgentHub。",
+          title: "组织工作",
+          body: "AgentHub 把目标、任务、责任和结果放到同一个协作空间里，方便人来管理和审查。",
         },
         {
-          title: "迁移执行体",
-          body: "把 RARA agent 作为可适应的通用 Agent，让它跟随工具、上下文、Provider 和环境变化。",
+          title: "移动执行",
+          body: "RARA agent 根据任务需要选择本地或云端执行，并在迁移时保留上下文。",
         },
         {
-          title: "泛化任务",
-          body: "同一套平台与 RARA agent 关系可以覆盖研究、运营、自动化、审查和其他 Agent 工作。",
+          title: "扩展场景",
+          body: "同一套团队与 Agent 关系，可以覆盖研究、运营、自动化、审查和更多业务任务。",
         },
       ],
     },
