@@ -21,6 +21,7 @@ export function Header({ copy, currentLanguage, languageOptions }: HeaderProps) 
       <nav className="nav-links" aria-label="Main navigation">
         <a href="#agenthub">{copy.nav.agenthub}</a>
         <a href="#rara">{copy.nav.rara}</a>
+        <a href="#use-cases">{copy.nav.useCases}</a>
         <a href="#workflow">{copy.nav.workflow}</a>
       </nav>
       <div className="header-actions">
