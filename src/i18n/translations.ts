@@ -10,6 +10,7 @@ export interface AppCopy {
     nav: {
       agenthub: string;
       rara: string;
+      useCases: string;
       workflow: string;
     };
     github: string;
@@ -21,6 +22,7 @@ export interface AppCopy {
     lead: string;
     agenthubCta: string;
     raraCta: string;
+    useCasesCta: string;
     consoleLabel: string;
     consoleLines: Array<{
       prompt: string;
@@ -79,6 +81,7 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        useCases: "Use cases",
         workflow: "Workflow",
       },
       github: "GitHub",
@@ -88,9 +91,10 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Agent Teams for real work",
       title: "Turn general agents into a team that delivers.",
       lead:
-        "AgentHub makes goals, tasks, progress, and outcomes manageable. RARA agent executes the work, keeps context, and continues complex tasks locally or in the cloud.",
+        "AgentHub gives every goal, owner, handoff, and result a visible home. RARA agent carries the work forward across local and cloud environments without losing context.",
       agenthubCta: "View AgentHub",
       raraCta: "View RARA",
+      useCasesCta: "Explore use cases",
       consoleLabel: "Runtime relationship preview",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
@@ -187,6 +191,7 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        useCases: "适用场景",
         workflow: "工作流",
       },
       github: "GitHub",
@@ -196,9 +201,10 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "面向真实工作的 Agent Team",
       title: "将通用 Agent 组织为可持续交付的数字团队。",
       lead:
-        "AgentHub 统一管理目标、任务、进展与结果；RARA agent 承担执行与上下文延续，并可在本地或云端持续推进复杂任务。",
+        "AgentHub 为目标、责任、交接与结果提供统一工作台；RARA agent 承担持续执行，在本地与云端之间迁移时仍保留任务上下文。",
       agenthubCta: "查看 AgentHub",
       raraCta: "查看 RARA",
+      useCasesCta: "查看适用场景",
       consoleLabel: "运行关系预览",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
@@ -296,6 +302,7 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        useCases: "Casos",
         workflow: "Flujo",
       },
       github: "GitHub",
@@ -305,9 +312,10 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Agent Teams para trabajo real",
       title: "Convierte agentes generales en un equipo que entrega.",
       lead:
-        "AgentHub hace gestionables los objetivos, tareas, avances y resultados. RARA agent ejecuta el trabajo, conserva el contexto y continúa tareas complejas en local o en cloud.",
+        "AgentHub da un espacio visible a cada objetivo, responsable, traspaso y resultado. RARA agent mantiene el trabajo en marcha entre local y cloud sin perder contexto.",
       agenthubCta: "Ver AgentHub",
       raraCta: "Ver RARA",
+      useCasesCta: "Ver casos de uso",
       consoleLabel: "Vista previa de la colaboración",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },
@@ -405,6 +413,7 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        useCases: "Usages",
         workflow: "Flux",
       },
       github: "GitHub",
@@ -414,9 +423,10 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Agent Teams pour le travail réel",
       title: "Transformer des agents généraux en une équipe qui livre.",
       lead:
-        "AgentHub rend les objectifs, tâches, progrès et résultats pilotables. RARA agent exécute le travail, garde le contexte et poursuit les tâches complexes en local ou dans le cloud.",
+        "AgentHub donne un espace visible à chaque objectif, responsable, passage de relais et résultat. RARA agent poursuit le travail entre local et cloud sans perdre le contexte.",
       agenthubCta: "Voir AgentHub",
       raraCta: "Voir RARA",
+      useCasesCta: "Voir les usages",
       consoleLabel: "Aperçu de la collaboration",
       consoleLines: [
         { prompt: "$", text: "agenthub team create research-ops" },

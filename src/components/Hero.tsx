@@ -28,6 +28,9 @@ export function Hero({ copy }: HeroProps) {
           <a className="button button-secondary" href="https://github.com/hawkingrei/rara" target="_blank" rel="noreferrer">
             {copy.raraCta}
           </a>
+          <a className="button button-tertiary" href="#use-cases">
+            {copy.useCasesCta}
+          </a>
         </div>
       </div>
 
