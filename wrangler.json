@@ -9,7 +9,7 @@
   },
   "env": {
     "preview": {
-      "name": "linkerdog-preview",
+      "name": "www-linkerdog-preview",
       "workers_dev": true,
       "assets": {
         "directory": "./dist",
