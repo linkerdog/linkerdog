@@ -371,6 +371,17 @@ h1 {
   background: rgba(255, 252, 246, 0.86);
 }
 
+.button-tertiary {
+  border-color: rgba(37, 35, 31, 0.12);
+  background: rgba(255, 252, 246, 0.48);
+  color: var(--muted);
+  box-shadow: none;
+}
+
+.button-tertiary:hover {
+  color: var(--blue);
+}
+
 .hero-console {
   overflow: hidden;
   border: 1px solid rgba(37, 35, 31, 0.18);
