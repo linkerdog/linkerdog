@@ -10,9 +10,11 @@ export interface AppCopy {
     nav: {
       agenthub: string;
       rara: string;
+      saas: string;
       useCases: string;
       workflow: string;
     };
+    saasApp: string;
     github: string;
     languageLabel: string;
   };
@@ -81,9 +83,11 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        saas: "SaaS",
         useCases: "Use cases",
         workflow: "Workflow",
       },
+      saasApp: "Open SaaS",
       github: "GitHub",
       languageLabel: "Choose language",
     },
@@ -107,7 +111,7 @@ export const translations: Record<Language, AppCopy> = {
       { title: "Durable workspace", body: "store team work, messages, and results" },
       { title: "Operational runtime", body: "ship as a service with release packaging" },
       { title: "Context engine", body: "memory search, hooks, and diagnostics stay live" },
-      { title: "Movable execution", body: "continue work across local and cloud nodes" },
+      { title: "Hosted SaaS", body: "manage accounts, media, uploads, and workspaces" },
     ],
     projectsLabel: "Project overview",
     modelSupport: {
@@ -162,6 +166,16 @@ export const translations: Record<Language, AppCopy> = {
           "Surface LSP diagnostics, goal evaluation, resume search, tools, files, web, planning, and skills in one execution loop.",
         ],
       },
+      saas: {
+        eyebrow: "Hosted Linkerdog workspace",
+        summary:
+          "Linkerdog SaaS is the hosted product surface for account access, workspace management, browser media capture, uploads, and shared runtime operations.",
+        features: [
+          "Use Login with Slock and account-scoped control-plane flows to make hosted workspaces reachable from the browser.",
+          "Capture browser media and upload artifacts through the SaaS pipeline so agent work can include recordings, files, and review material.",
+          "Operate development, testing, and production environments behind Linkerdog domains, with health checks and deployment workflows for the web surface.",
+        ],
+      },
     },
     workflow: {
       eyebrow: "How they fit together",
@@ -179,6 +193,10 @@ export const translations: Record<Language, AppCopy> = {
           title: "Move when needed",
           body: "Use the same team-and-agent model to continue research, operations, automation, and review across local or cloud environments.",
         },
+        {
+          title: "Expose it as SaaS",
+          body: "Linkerdog SaaS gives the system an account-aware web surface for hosted workspaces, media capture, uploads, and operational access.",
+        },
       ],
     },
   },
@@ -191,9 +209,11 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        saas: "SaaS",
         useCases: "适用场景",
         workflow: "工作流",
       },
+      saasApp: "打开 SaaS",
       github: "GitHub",
       languageLabel: "选择语言",
     },
@@ -217,7 +237,7 @@ export const translations: Record<Language, AppCopy> = {
       { title: "持久工作台", body: "保存团队工作、消息与结果" },
       { title: "服务化运行", body: "支持发布包与长期部署" },
       { title: "上下文引擎", body: "记忆搜索、hooks 与诊断持续可用" },
-      { title: "跨环境执行", body: "在本地与云端节点之间接续推进" },
+      { title: "Hosted SaaS", body: "管理账号、媒体、上传与工作空间" },
     ],
     projectsLabel: "项目概览",
     modelSupport: {
@@ -272,6 +292,16 @@ export const translations: Record<Language, AppCopy> = {
           "在同一执行循环中整合 LSP 诊断、目标评估、恢复搜索、工具、文件、Web、计划与 Skill。",
         ],
       },
+      saas: {
+        eyebrow: "Hosted Linkerdog 工作空间",
+        summary:
+          "Linkerdog SaaS 是面向用户的托管产品入口，负责账号访问、工作空间管理、浏览器媒体采集、文件上传与共享运行时操作。",
+        features: [
+          "通过 Login with Slock 与账号级 control-plane 流程，让托管工作空间可以从浏览器安全访问。",
+          "支持浏览器录音录像与产物上传，使 Agent 工作可以包含录制内容、文件和审查材料。",
+          "以 Linkerdog 域名承载 development、testing 与 production 环境，并配套健康检查和 Web 部署工作流。",
+        ],
+      },
     },
     workflow: {
       eyebrow: "它们如何配合",
@@ -289,6 +319,10 @@ export const translations: Record<Language, AppCopy> = {
           title: "按需迁移",
           body: "同一套团队与 Agent 协作关系，可以在本地或云端环境中接续推进研究、运营、自动化与审查。",
         },
+        {
+          title: "以 SaaS 暴露",
+          body: "Linkerdog SaaS 为系统提供账号感知的 Web 入口，承载托管工作空间、媒体采集、上传与运营访问。",
+        },
       ],
     },
   },
@@ -302,9 +336,11 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        saas: "SaaS",
         useCases: "Casos",
         workflow: "Flujo",
       },
+      saasApp: "Abrir SaaS",
       github: "GitHub",
       languageLabel: "Elegir idioma",
     },
@@ -328,7 +364,7 @@ export const translations: Record<Language, AppCopy> = {
       { title: "Workspace duradero", body: "guarda trabajo, mensajes y resultados" },
       { title: "Runtime operativo", body: "se despliega como servicio empaquetado" },
       { title: "Motor de contexto", body: "memoria, hooks y diagnósticos siguen activos" },
-      { title: "Ejecución móvil", body: "continúa entre nodos locales y cloud" },
+      { title: "SaaS hosted", body: "gestiona cuentas, medios, subidas y workspaces" },
     ],
     projectsLabel: "Resumen de proyectos",
     modelSupport: {
@@ -383,6 +419,16 @@ export const translations: Record<Language, AppCopy> = {
           "Muestra diagnósticos LSP, evaluación de objetivos, búsqueda de sesiones, herramientas, archivos, web, planificación y skills en un mismo loop.",
         ],
       },
+      saas: {
+        eyebrow: "Workspace Linkerdog hosted",
+        summary:
+          "Linkerdog SaaS es la superficie hosted del producto para acceso de cuentas, gestión de workspaces, captura multimedia en el navegador, subidas y operaciones compartidas del runtime.",
+        features: [
+          "Usa Login with Slock y flujos de control plane por cuenta para abrir workspaces hosted desde el navegador.",
+          "Captura audio y video del navegador y sube artefactos para que el trabajo de los agentes incluya grabaciones, archivos y material de revisión.",
+          "Opera entornos de development, testing y production detrás de dominios Linkerdog, con health checks y workflows de despliegue para la web.",
+        ],
+      },
     },
     workflow: {
       eyebrow: "Cómo encajan",
@@ -400,6 +446,10 @@ export const translations: Record<Language, AppCopy> = {
           title: "Muévete cuando haga falta",
           body: "Usa el mismo modelo equipo-agente para continuar investigación, operaciones, automatización y revisión entre local y cloud.",
         },
+        {
+          title: "Exponerlo como SaaS",
+          body: "Linkerdog SaaS da al sistema una superficie web con cuentas para workspaces hosted, captura multimedia, subidas y acceso operativo.",
+        },
       ],
     },
   },
@@ -413,9 +463,11 @@ export const translations: Record<Language, AppCopy> = {
       nav: {
         agenthub: "AgentHub",
         rara: "RARA",
+        saas: "SaaS",
         useCases: "Usages",
         workflow: "Flux",
       },
+      saasApp: "Ouvrir SaaS",
       github: "GitHub",
       languageLabel: "Choisir la langue",
     },
@@ -439,7 +491,7 @@ export const translations: Record<Language, AppCopy> = {
       { title: "Workspace durable", body: "stocker travail, messages et résultats" },
       { title: "Runtime opérationnel", body: "déployer comme service packagé" },
       { title: "Moteur de contexte", body: "mémoire, hooks et diagnostics restent actifs" },
-      { title: "Exécution mobile", body: "continuer entre noeuds locaux et cloud" },
+      { title: "SaaS hosted", body: "gérer comptes, médias, uploads et workspaces" },
     ],
     projectsLabel: "Aperçu des projets",
     modelSupport: {
@@ -494,6 +546,16 @@ export const translations: Record<Language, AppCopy> = {
           "Afficher les diagnostics LSP, l'évaluation d'objectif, la recherche de reprise, les outils, les fichiers, le web, la planification et les compétences dans une même boucle.",
         ],
       },
+      saas: {
+        eyebrow: "Workspace Linkerdog hosted",
+        summary:
+          "Linkerdog SaaS est la surface hosted du produit pour l'accès aux comptes, la gestion des workspaces, la capture média dans le navigateur, les uploads et les opérations runtime partagées.",
+        features: [
+          "Utiliser Login with Slock et des flux de control plane par compte pour ouvrir des workspaces hosted depuis le navigateur.",
+          "Capturer audio et vidéo dans le navigateur puis uploader les artefacts afin que le travail des agents inclue enregistrements, fichiers et matériaux de revue.",
+          "Exploiter les environnements development, testing et production derrière les domaines Linkerdog, avec health checks et workflows de déploiement web.",
+        ],
+      },
     },
     workflow: {
       eyebrow: "Comment ils s'articulent",
@@ -510,6 +572,10 @@ export const translations: Record<Language, AppCopy> = {
         {
           title: "Bouger quand nécessaire",
           body: "Utilisez le même modèle équipe-agent pour continuer recherche, opérations, automatisation et revue entre local et cloud.",
+        },
+        {
+          title: "L'exposer en SaaS",
+          body: "Linkerdog SaaS donne au système une surface web avec comptes pour workspaces hosted, capture média, uploads et accès opérationnel.",
         },
       ],
     },
