@@ -756,7 +756,7 @@ h1 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
   padding: clamp(3rem, 7vw, 5.5rem) clamp(1.25rem, 5vw, 4.5rem);
 }
