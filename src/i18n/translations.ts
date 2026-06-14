@@ -312,7 +312,7 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Agent Teams para trabajo real",
       title: "Convierte agentes generales en un equipo que entrega.",
       lead:
-        "AgentHub da un workspace duradero a cada objetivo, responsable, traspaso, mensaje y resultado. RARA agent lleva memoria, hooks, diagnósticos y herramientas entre ejecución local y cloud sin perder contexto.",
+        "AgentHub da un workspace duradero a cada objetivo, responsable, traspaso, mensaje y resultado. RARA agent lleva la memoria, los hooks, los diagnósticos y las herramientas entre la ejecución local y la nube sin perder el contexto.",
       agenthubCta: "Ver AgentHub",
       raraCta: "Ver RARA",
       useCasesCta: "Ver casos de uso",
@@ -335,7 +335,7 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Soporte de modelos",
       title: "Elige el modelo para la tarea, no al revés.",
       body:
-        "RARA agent conecta con varios proveedores y formas de despliegue mientras mantiene memoria, hooks, herramientas y diagnósticos unidos a la misma tarea larga.",
+        "RARA agent conecta con varios proveedores y formas de despliegue mientras mantiene la memoria, los hooks, las herramientas y los diagnósticos unidos a la misma tarea larga.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
@@ -347,17 +347,17 @@ export const translations: Record<Language, AppCopy> = {
       items: [
         {
           title: "Operaciones de investigación",
-          body: "Coordina agentes para recopilar fuentes, comparar, sintetizar y revisar preservando decisiones e historial de mensajes.",
+          body: "Coordina agentes para recopilar fuentes, comparar, sintetizar y revisar preservando las decisiones y el historial de mensajes.",
           accent: "Research",
         },
         {
           title: "Automatización de negocio",
-          body: "Organiza trabajo recurrente entre herramientas, archivos, tareas web, hooks y checkpoints humanos sin reiniciar contexto.",
+          body: "Organiza el trabajo recurrente entre herramientas, archivos, tareas web, hooks y checkpoints humanos sin reiniciar el contexto.",
           accent: "Ops",
         },
         {
           title: "Flujos de revisión",
-          body: "Permite que los agentes inspeccionen código, diagnósticos, planes, artefactos y resultados en el tiempo con un registro trazable.",
+          body: "Permite que los agentes inspeccionen el código, los diagnósticos, los planes, los artefactos y los resultados a lo largo del tiempo con un registro trazable.",
           accent: "Review",
         },
       ],
@@ -378,7 +378,7 @@ export const translations: Record<Language, AppCopy> = {
         summary:
           "RARA agent es un ejecutor general móvil con memoria, hooks, diagnósticos y orquestación de herramientas integrados en el contexto runtime.",
         features: [
-          "Busca memoria con índices locales y herramientas de retrieval para reutilizar contexto previo al reanudar el trabajo.",
+          "Busca en la memoria con índices locales y herramientas de retrieval para reutilizar el contexto previo al reanudar el trabajo.",
           "Usa hook lifecycles alrededor de herramientas para inyectar política, automatización y contexto en la fase correcta.",
           "Muestra diagnósticos LSP, evaluación de objetivos, búsqueda de sesiones, herramientas, archivos, web, planificación y skills en un mismo loop.",
         ],
@@ -423,7 +423,7 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Agent Teams pour le travail réel",
       title: "Transformer des agents généraux en une équipe qui livre.",
       lead:
-        "AgentHub donne un workspace durable à chaque objectif, responsable, passage de relais, message et résultat. RARA agent transporte mémoire, hooks, diagnostics et outils entre exécution locale et cloud sans perdre le contexte.",
+        "AgentHub donne un workspace durable à chaque objectif, responsable, passage de relais, message et résultat. RARA agent transporte la mémoire, les hooks, les diagnostics et les outils entre l'exécution locale et le cloud sans perdre le contexte.",
       agenthubCta: "Voir AgentHub",
       raraCta: "Voir RARA",
       useCasesCta: "Voir les usages",
@@ -446,7 +446,7 @@ export const translations: Record<Language, AppCopy> = {
       eyebrow: "Support des modèles",
       title: "Choisir le modèle pour la tâche, pas l'inverse.",
       body:
-        "RARA agent se connecte à plusieurs fournisseurs et modes de déploiement tout en gardant mémoire, hooks, outils et diagnostics attachés à la même tâche longue.",
+        "RARA agent se connecte à plusieurs fournisseurs et modes de déploiement tout en gardant la mémoire, les hooks, les outils et les diagnostics attachés à la même tâche longue.",
       centerLabel: "RARA agent",
       note: "Codex · Gemini · Kimi · OpenRouter · DeepSeek · AWS Bedrock",
     },
@@ -458,7 +458,7 @@ export const translations: Record<Language, AppCopy> = {
       items: [
         {
           title: "Opérations de recherche",
-          body: "Coordonner plusieurs agents pour collecter, comparer, synthétiser et relire tout en préservant décisions et historique de messages.",
+          body: "Coordonner plusieurs agents pour collecter, comparer, synthétiser et relire tout en préservant les décisions et l'historique des messages.",
           accent: "Research",
         },
         {
@@ -468,7 +468,7 @@ export const translations: Record<Language, AppCopy> = {
         },
         {
           title: "Flux de revue",
-          body: "Laisser les agents inspecter code, diagnostics, plans, artefacts et résultats dans la durée avec un historique traçable.",
+          body: "Laisser les agents inspecter le code, les diagnostics, les plans, les artefacts et les résultats dans la durée avec un historique traçable.",
           accent: "Review",
         },
       ],
@@ -477,21 +477,21 @@ export const translations: Record<Language, AppCopy> = {
       agenthub: {
         eyebrow: "Runtime Agent Team durable",
         summary:
-          "AgentHub transforme plusieurs agents généraux en runtime d'équipe opérationnel : ownership, messages, relais, stockage durable et résultats restent visibles dans un seul workspace.",
+          "AgentHub transforme plusieurs agents généraux en un runtime d'équipe opérationnel : l'ownership, les messages, les relais, le stockage durable et les résultats restent visibles dans un seul workspace.",
         features: [
           "Rassembler des sessions d'agents dispersées dans une vue d'équipe avec tâches, canaux et responsabilités claires.",
-          "Persister les conversation bodies via stockage par niveaux et un body store RocksDB pour l'historique long.",
-          "Exécuter AgentHub comme infrastructure déployable avec packages de release, defaults de service et workbench allégé.",
+          "Persister les conversation bodies via un stockage par niveaux et un body store RocksDB pour l'historique long.",
+          "Exécuter AgentHub comme infrastructure déployable avec des packages de release, des configurations par défaut de service et un workbench allégé.",
         ],
       },
       rara: {
         eyebrow: "RARA agent",
         summary:
-          "RARA agent est un exécuteur général mobile avec mémoire, hooks, diagnostics et orchestration d'outils intégrés au contexte runtime.",
+          "RARA agent est un exécuteur général mobile avec la mémoire, les hooks, les diagnostics et l'orchestration d'outils intégrés au contexte runtime.",
         features: [
-          "Chercher la mémoire avec index locaux et outils de retrieval pour réutiliser le contexte au lieu de le reconstruire.",
-          "Utiliser des hook lifecycles autour des outils pour injecter politique, automatisation et contexte au bon moment.",
-          "Afficher diagnostics LSP, évaluation d'objectif, recherche de reprise, outils, fichiers, web, planification et skills dans une même boucle.",
+          "Rechercher dans la mémoire avec des index locaux et des outils de retrieval pour réutiliser le contexte au lieu de le reconstruire.",
+          "Utiliser des hook lifecycles autour des outils pour injecter des règles, de l'automatisation et du contexte au bon moment.",
+          "Afficher les diagnostics LSP, l'évaluation d'objectif, la recherche de reprise, les outils, les fichiers, le web, la planification et les compétences dans une même boucle.",
         ],
       },
     },
