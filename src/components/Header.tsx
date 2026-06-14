@@ -21,6 +21,7 @@ export function Header({ copy, currentLanguage, languageOptions }: HeaderProps) 
       <nav className="nav-links" aria-label="Main navigation">
         <a href="#agenthub">{copy.nav.agenthub}</a>
         <a href="#rara">{copy.nav.rara}</a>
+        <a href="#saas">{copy.nav.saas}</a>
         <a href="#use-cases">{copy.nav.useCases}</a>
         <a href="#workflow">{copy.nav.workflow}</a>
       </nav>
@@ -43,7 +44,10 @@ export function Header({ copy, currentLanguage, languageOptions }: HeaderProps) 
             ))}
           </div>
         </details>
-        <a className="nav-cta" href="https://github.com/hawkingrei" target="_blank" rel="noreferrer">
+        <a className="nav-cta" href="https://app.linkerdog.work/" target="_blank" rel="noreferrer">
+          {copy.saasApp}
+        </a>
+        <a className="nav-cta nav-cta-secondary" href="https://github.com/hawkingrei" target="_blank" rel="noreferrer">
           {copy.github}
         </a>
       </div>

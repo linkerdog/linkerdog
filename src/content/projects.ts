@@ -1,4 +1,4 @@
-export type ProjectId = "agenthub" | "rara";
+export type ProjectId = "agenthub" | "rara" | "saas";
 
 export interface Project {
   id: ProjectId;
@@ -7,7 +7,7 @@ export interface Project {
   primaryUrl: string;
   primaryLabel: string;
   logoImageUrl?: string;
-  accent: "blue" | "green";
+  accent: "blue" | "green" | "red";
 }
 
 export const projects: Project[] = [
@@ -28,5 +28,14 @@ export const projects: Project[] = [
     primaryLabel: "Repository",
     logoImageUrl: "/logos/rara.png",
     accent: "green",
+  },
+  {
+    id: "saas",
+    name: "Linkerdog SaaS",
+    repositoryUrl: "https://github.com/linkerdog/saas",
+    primaryUrl: "https://app.linkerdog.work/",
+    primaryLabel: "Open SaaS",
+    logoImageUrl: "/logos/linkerdog.svg",
+    accent: "red",
   },
 ];

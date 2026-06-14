@@ -88,6 +88,11 @@ img {
   gap: 0.75rem;
 }
 
+.header-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .brand {
   color: #2f2b26;
   font-family: "Space Grotesk", Inter, sans-serif;
@@ -233,12 +238,24 @@ img {
   padding: 0.56rem 0.88rem;
   font-size: 0.86rem;
   font-weight: 700;
+  white-space: nowrap;
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.24);
 }
 
 .nav-cta:hover {
   background: #1d4ed8;
   transform: translateY(-1px);
+}
+
+.nav-cta-secondary {
+  background: rgba(255, 252, 246, 0.84);
+  color: var(--muted);
+  box-shadow: 0 1px 7px rgba(82, 73, 59, 0.08);
+}
+
+.nav-cta-secondary:hover {
+  background: #fff;
+  color: var(--blue);
 }
 
 .hero-section {
@@ -739,7 +756,7 @@ h1 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
   padding: clamp(3rem, 7vw, 5.5rem) clamp(1.25rem, 5vw, 4.5rem);
 }
@@ -763,6 +780,10 @@ h1 {
 
 .project-panel-green {
   background: linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(240, 253, 244, 0.78));
+}
+
+.project-panel-red {
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(254, 242, 242, 0.78));
 }
 
 .panel-header {
@@ -844,6 +865,11 @@ h1 {
   animation-delay: 650ms;
 }
 
+.project-panel-red .project-logo,
+.project-panel-red .project-logo-image {
+  animation-delay: 1s;
+}
+
 .project-logo-image {
   position: relative;
   width: min(72%, 18rem);
@@ -881,6 +907,10 @@ h1 {
 
 .project-panel-green .feature-list li::before {
   background: var(--green);
+}
+
+.project-panel-red .feature-list li::before {
+  background: var(--red);
 }
 
 .workflow-section {
@@ -1075,7 +1105,7 @@ h1 {
 
   .header-actions {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .language-menu-list {
