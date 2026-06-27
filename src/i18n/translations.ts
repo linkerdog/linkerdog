@@ -202,8 +202,8 @@ export const translations: Record<Language, AppCopy> = {
   },
   zh: {
     meta: {
-      title: "Linkerdog - AgentHub 与 RARA",
-      description: "Linkerdog 通过 AgentHub 与 RARA agent，运行具备持久记忆、可审计记录与可迁移执行能力的 Agent Team。",
+      title: "Linkerdog - 让会议产出执行",
+      description: "Linkerdog 让 Agent 坐进会议，实时理解讨论，当场产出带原话引用的执行卡片，写进团队记忆。",
     },
     header: {
       nav: {
@@ -218,10 +218,10 @@ export const translations: Record<Language, AppCopy> = {
       languageLabel: "选择语言",
     },
     hero: {
-      eyebrow: "面向真实工作的 Agent Team",
-      title: "将通用 Agent 组织为可持续交付的数字团队。",
+      eyebrow: "Agent 参会，讨论即执行",
+      title: "让会议产出执行。",
       lead:
-        "AgentHub 为目标、责任、交接、消息与结果提供持久化团队工作台；RARA agent 将记忆、hooks、诊断与工具带入本地和云端执行过程，迁移时仍保留上下文。",
+        "Agent 坐进会议，实时理解讨论，当场产出带原话引用的执行卡片，写进团队记忆，下场会直接复用。",
       agenthubCta: "查看 AgentHub",
       raraCta: "查看 RARA",
       useCasesCta: "查看适用场景",
